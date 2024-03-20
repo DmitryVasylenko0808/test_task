@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/helpers.js" defer></script>
+    <script src="./js/todoList.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+ 
+<body>
+    <div id="app">
+        <form id="form">
+            <div class="field">
+                <label for="title">Название:</label>
+                <input name="title" />
+            </div>
+            <div class="field">
+                <label for="desc">Описание:</label>
+                <textarea name="desc" rows="5"></textarea>
+            </div>
+            <div class="row">
+                <button class="btn btn_submit btn_green" type="submit">Добавить</button>
+            </div>
+        </form>
+
+        <h1 class="title">ToDo List</h1>
+
+        <div class="overlay hidden">
+            <form id="modal_form">
+                <div class="field">
+                    <label for="modal_title">Название:</label>
+                    <input name="modal_title" />
+                </div>
+                <div class="field">
+                    <label for="modal_desc">Описание:</label>
+                    <textarea name="modal_desc" rows="5"></textarea>
+                </div>
+                <div class="container">
+                    <button class="btn btn_submit btn_red" id="cancel_btn">Отмена</button>
+                    <button class="btn btn_submit btn_green" type="submit" id="submit_btn">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+ 
+</html>
